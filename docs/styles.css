@@ -90,22 +90,25 @@ h1 {
   mix-blend-mode: darken;
 }
 
-.thumbnail:nth-child(4n + 3) {
+.thumbnail:nth-of-type(4n + 1) {
+  --shadow-color: hsl(221, 100%, 50%);
+  --highlight-color: hsl(330, 100%, 70%);
   --shadow-color: hsl(211, 100%, 50%);
-  --highlight-color: hsl(179, 100%, 70%);
+  --highlight-color: hsl(31, 100%, 65%);
 }
 
-.thumbnail:nth-child(4n + 2) {
+.thumbnail:nth-of-type(4n + 2) {
   --shadow-color: hsl(344, 100%, 50%);
   --highlight-color: hsl(31, 100%, 70%);
 }
 
-.thumbnail:nth-child(4n + 1) {
-  --shadow-color: hsl(221, 100%, 50%);
-  --highlight-color: hsl(330, 100%, 70%);
+.thumbnail:nth-of-type(4n + 3) {
+  --shadow-color: hsl(211, 100%, 50%);
+  --highlight-color: hsl(179, 100%, 70%);
+  /*--highlight-color: magenta;*/
 }
 
-.thumbnail:nth-child(4n) {
+.thumbnail:nth-of-type(4n) {
   --shadow-color: hsl(179, 100%, 50%);
   --highlight-color: hsl(31, 100%, 70%);
 }
